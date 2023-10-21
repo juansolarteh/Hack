@@ -1,0 +1,29 @@
+const valores = await Promise.all([
+      new permission({
+        name: "manage_menu",
+      }).save(),
+      new permission({
+        name: "order",
+      }).save(),
+      new permission({
+        name: "see_tips",
+      }).save(),
+      new permission({
+        name: "analyze_accounts",
+      }).save(),
+      new permission({
+        name: "analyze_global_accounts",
+      }).save(),
+      new permission({
+        name: "manage_staff",
+      }).save(),
+      new permission({
+        name: "manage_aplication",
+      }).save(),
+      new permission({
+        name: "manage_restaurant",
+      }).save(),
+      new permission({
+        name: "manage_payments",
+      }).save()
+    ]);
